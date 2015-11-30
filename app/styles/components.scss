@@ -1,0 +1,17 @@
+@import "base";
+
+#smallMouse{
+  width: 100%;
+  height: 100%;
+  border: 3px solid #333;
+  border-radius: 20px;
+  background-color: white;
+  #mouseBtn{
+    border-radius: 2px;
+    background-color: #333;
+    width: 12.5%;
+    height: 20%;
+    top: 17%;
+    @extend .tranCenX;
+  }
+}

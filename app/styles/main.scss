@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "base";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -70,7 +71,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    //max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -87,5 +88,67 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+#mouse{
+  position: absolute;
+  bottom: 100px;
+  height:80px;
+  width: 40px;
+  @extend .tranCenX;
+}
+
+#hero{
+  @extend .tranCen;
+  h1{
+    font-size: 54.17px;
+  }
+  p{
+    font-size: 29.17px;
+  }
+}
+
+
+//overwrite
+.header{
+  margin-bottom: 0;
+  border: 0;
+}
+.myNav{
+  background-color: white;
+  height: 75.33px;
+  #brand{
+    font-size: 33.33px;
+    height: 100%;
+    line-height: 100%;
+    padding: 21px 15px;
+  }
+  .navbar-nav > li > a{
+    font-size: 16.67px;
+    height: 74.33px;
+    line-height: 74.33px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+#mainCon{
+  position: relative;
+  top: 200px;
+}
+
+#works{
+  .worksItem{
+    width: 100%;
+    section{
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      img{
+        max-width: 100%;
+        display: inline-block;
+      }
+    }
   }
 }
