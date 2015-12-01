@@ -15,3 +15,18 @@
     @extend .tranCenX;
   }
 }
+
+.viewMore{
+  box-sizing: content-box;
+  text-align: center;
+  line-height: 36px;
+  font-size: 12.5px;
+
+  height: 36px;
+  width: 101px;
+  display: inline-block;
+
+  border: 2px solid rgb(68, 157, 202);
+  border-radius: 3px;
+  color: rgb(68, 157, 202);
+}

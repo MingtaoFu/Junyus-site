@@ -115,40 +115,89 @@ body {
   margin-bottom: 0;
   border: 0;
 }
-.myNav{
-  background-color: white;
-  height: 75.33px;
-  #brand{
-    font-size: 33.33px;
-    height: 100%;
-    line-height: 100%;
-    padding: 21px 15px;
-  }
-  .navbar-nav > li > a{
-    font-size: 16.67px;
-    height: 74.33px;
-    line-height: 74.33px;
-    padding-bottom: 0;
-    padding-top: 0;
+.header {
+  .myNav {
+    background-color: white;
+    height: 75.33px;
+    #brand {
+      font-size: 33.33px;
+      height: 100%;
+      line-height: 100%;
+      padding: 21px 15px;
+    }
+    .navbar-nav > li > a {
+      font-size: 16.67px;
+      height: 74.33px;
+      line-height: 74.33px;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
   }
 }
 
 #mainCon{
   position: relative;
-  top: 200px;
+  top: 162.33px;
+
 }
 
 #works{
+  padding-left: 6%;
+  padding-right: 6%;
+
   .worksItem{
+    position: relative;
+    margin-bottom: 174px;
     width: 100%;
-    section{
-      display: inline-block;
-      width: 50%;
-      height: 100%;
+    .itemLeft {
       img{
         max-width: 100%;
         display: inline-block;
       }
+    }
+  }
+}
+
+.itemRight > h3{
+  font-size: 33.33px;
+}
+.itemRight > p{
+  font-size: 16.67px;
+  line-height: 2em;
+}
+
+.unique{
+  position: relative;
+  .uniqueImg{
+    position: relative;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 991.5px){
+  .worksItem{
+    section{
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+  }
+  #works{
+    h2{
+      margin-bottom: 275px;
+    }
+  }
+}
+
+@media screen and (max-width: 991.5px){
+  #works{
+    h2{
+      margin-bottom: 173px;
     }
   }
 }
