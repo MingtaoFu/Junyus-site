@@ -33,7 +33,7 @@ angular
     .controller('worksLayout', function($scope) {
         $scope.worksData = [
             {
-                left: ["../images/main/Hummer.png"],
+                left: "../images/main/Hummer.png",
                 right: {
                     title: 'Hummer',
                     content: 'Hummer is a game application that aims to help people' +
@@ -42,7 +42,7 @@ angular
                 }
             },
             {
-                left: ["../images/main/OneArm.png"],
+                left: "../images/main/OneArm.png",
                 right: {
                     title: 'OneArm',
                     content: 'OneArm is a wearable armband  that allows people control computer' +
@@ -52,10 +52,7 @@ angular
                 }
             },
             {
-                left: [
-                    "../images/main/Headring.png",
-                    "../images/main/Tracker.png"
-                ],
+                left: "../images/main/HeadringApp.png",
                 right: {
                     title: 'Visualizing Headring',
                     content: 'Visualizing Headring is a wearable auxiliary product that aids the blind to ' +
@@ -65,7 +62,7 @@ angular
                 }
             },
             {
-                left: ["../images/main/OverHUSTpng.png"],
+                left: "../images/main/OverHUSTpng.png",
                 right: {
                     title: 'OverHust',
                     content: 'OverHust is a mobile application that utilizes street view maps to help users ' +
@@ -73,5 +70,38 @@ angular
                     ' better able to find the destinations,or just take a visual tour on campus within the app. '
                 }
             }
+        ];
+        $scope.unique = [
+            {
+                img: "../images/main/UniqueStudioPic.png",
+                intro: {
+                    title: "Unique Studio",
+                    content: "hahah ahaha hahaha hahahh ahahahahah ahhahaha hahaha hhaha" +
+                    "haha hahah ahah hahahah ahahh ah ahahah hahahah hahahahhaha hahahha" +
+                    "hahah ahahhah ahahahha lha hahahah hahahaha hahhaha hahhahah"
+
+                }
+            },
+            {
+                img: "../images/main/Design.png",
+                intro: {
+                    title: "Unique Studio",
+                    content: "hahahah ahahah ahahaha lhhaha lhahahahahha lhahahah ahahhaha" +
+                    "hahah ahahah ahhahahah ahahhaha hahahhahaha hhahahahha hahahahha" +
+                    "hahahkk iahah hahahahahh ahahah ahahha lhahahah lahhahah ahhahah"
+
+                }
+            },
+            {
+                img: "../images/main/HackDay.png",
+                intro: {
+                    title: "Unique Studio",
+                    content: "hahahah ahahah ahahaha lhhaha lhahahahahha lhahahah ahahhaha" +
+                    "hahah ahahah ahhahahah ahahhaha hahahhahaha hhahahahha hahahahha" +
+                    "hahahkk iahah hahahahahh ahahah ahahha lhahahah lahhahah ahhahah"
+
+                }
+            }
+
         ];
     });

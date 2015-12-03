@@ -2,13 +2,12 @@
     <section id="works" class="container">
         <h2>SELECTED WORKS</h2>
         <div class="worksItem row" ng-repeat="data in worksData">
-            <section class="itemLeft col-md-6 col-lg-6 col-sm-8 col-xs-8 col-md-offset-0 col-lg-offset-0
-            col-sm-offset-2 col-xs-offset-2">
-                <img ng-repeat="url in data.left" src="{{url}}"
-                     style="max-width: {{100/data.left.length}}%">
+            <section class="itemLeft col-md-6 col-lg-6 col-sm-8 col-xs-10 col-md-offset-0 col-lg-offset-0
+            col-sm-offset-2 col-xs-offset-1">
+                <img src="{{data.left}}">
             </section>
-            <section class="itemRight textL col-md-5 col-sm-8 col-lg-5 col-xs-8 col-md-offset-1 col-lg-offset1-
-            col-sm-offset-2 col-xs-offset-2">
+            <section class="itemRight textL col-md-5 col-sm-8 col-lg-5 col-xs-10 col-md-offset-1 col-lg-offset1-
+            col-sm-offset-2 col-xs-offset-1">
                 <h3>{{data.right.title}}</h3>
                 <p>{{data.right.content}}</p>
                 <a class="viewMore">VIEW MORE</a>
@@ -23,37 +22,15 @@
             constantly absorbing new things. I'm a designer constantly absorbing new things. I'm a designer constantly
             absorbing new things. I'm a designer constantly absorbing new things. I'm a designer constantly
             absorbing new things.</p>
-        <div class="unique">
-            <section class="uniqueImg col-md-6 col-sm-6 col-lg-6 col-xs-6">
-                <img src="../images/main/UniqueStudioPic.png">
+        <div class="unique row" ng-repeat="item in unique" ng-class-even="'uniqueEven'"
+             ng-class-odd="'uniqueOdd'">
+            <section class="uniqueImg col-md-7 col-sm-8 col-lg-7 col-xs-8">
+                <img src="{{item.img}}">
             </section>
 
-            <section class="uniqueWords col-md-5 col-sm-5 col-lg-5 col-xs-5">
-                <h3>UNIQUE STUDIO</h3>
-                <p>Hi
-                    yabsorbing new things.</p>
-            </section>
-        </div>
-        <div class="unique">
-            <section class="uniqueImg col-md-6 col-sm-6 col-lg-6 col-xs-6">
-                <img src="../images/main/UniqueStudioPic.png">
-            </section>
-
-            <section class="uniqueWords col-md-5 col-sm-5 col-lg-5 col-xs-5">
-                <h3>UNIQUE STUDIO</h3>
-                <p>Hi
-                    yabsorbing new things.</p>
-            </section>
-        </div>
-        <div class="unique">
-            <section class="uniqueImg col-md-6 col-sm-6 col-lg-6 col-xs-6">
-                <img src="../images/main/UniqueStudioPic.png">
-            </section>
-
-            <section class="uniqueWords col-md-5 col-sm-5 col-lg-5 col-xs-5">
-                <h3>UNIQUE STUDIO</h3>
-                <p>Hi
-                    yabsorbing new things.</p>
+            <section class="uniqueWords col-md-5 col-sm-8 col-lg-5 col-xs-8">
+                <h3>{{item.intro.title}}</h3>
+                <p>{{item.intro.content}}</p>
             </section>
         </div>
     </section>
