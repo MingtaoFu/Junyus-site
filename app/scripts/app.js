@@ -26,6 +26,11 @@ angular
                 controller: 'worksLayout',
                 // controllerAs: 'about'
             })
+            .when('/works', {
+                templateUrl: 'views/model.html',
+                //controller: 'worksLayout',
+                // controllerAs: 'about'
+            })
             .otherwise({
                 redirectTo: '/'
             });
