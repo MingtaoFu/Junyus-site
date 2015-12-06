@@ -26,11 +26,39 @@ h4{
 }
 
 .showImageCon{
-  margin-top: 30px;
-  margin-bottom: 30px;
-
   padding-left: 15px;
   padding-right: 15px;
+  img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.padX35Con{
+  img{
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+.padX50Con{
+  img{
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.padX30Con{
+  img{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+.padX40Con{
+  img{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 #tag{
