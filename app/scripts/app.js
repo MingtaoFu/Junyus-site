@@ -31,6 +31,11 @@ angular
                 //controller: 'worksLayout',
                 // controllerAs: 'about'
             })
+            .when('/freeToGo', {
+                templateUrl: 'views/freeToGo.html',
+                //controller: 'worksLayout',
+                // controllerAs: 'about'
+            })
             .otherwise({
                 redirectTo: '/'
             });
