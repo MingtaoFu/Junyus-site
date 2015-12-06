@@ -13,6 +13,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -120,13 +121,13 @@ body {
     background-color: white;
     height: 75.33px;
     #brand {
-      font-size: 33.33px;
+      font-size: $font33;
       height: 100%;
       line-height: 100%;
       padding: 21px 15px;
     }
     .navbar-nav > li > a {
-      font-size: 16.67px;
+      font-size: $font16;
       height: 74.33px;
       line-height: 74.33px;
       padding-bottom: 0;
@@ -159,10 +160,10 @@ body {
 }
 
 .itemRight > h3{
-  font-size: 33.33px;
+  font-size: $font33;
 }
 .itemRight > p{
-  font-size: 16.67px;
+  font-size: $font16;
   line-height: 2em;
 }
 

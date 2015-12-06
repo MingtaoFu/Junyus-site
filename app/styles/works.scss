@@ -1,0 +1,51 @@
+@import "base";
+#worksMainCon{
+  padding-top: 75px;
+}
+
+
+body{
+  font-size: $font16;
+  line-height: 2em;
+  color: $fontC137;
+}
+
+.black{
+  color: #333;;
+}
+
+h3{
+  font-size: $font33;
+  margin-top: 40px;
+  color: #333;
+}
+
+h4{
+  color: #333;
+  font-weight: bold;
+}
+
+.showImageCon{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#tag{
+  float: right;
+  width: 33%;
+}
+
+#heroImg{
+  position: relative;
+  text-align: center;
+  height: 252px;
+  max-width: 1366px;
+  //width: 100%;
+  img{
+    height: 100%;
+    @extend .tranCenX;
+  }
+}
