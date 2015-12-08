@@ -18,14 +18,16 @@ angular
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
-                controller: 'MainCtrl',
+                controller: 'worksLayout',
                 controllerAs: 'main'
             })
+            /*
             .when('/body', {
                 templateUrl: 'views/body.html',
                 controller: 'worksLayout',
                 // controllerAs: 'about'
             })
+            */
             .when('/works', {
                 templateUrl: 'views/model.html',
                 //controller: 'worksLayout',

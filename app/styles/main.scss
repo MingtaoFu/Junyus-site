@@ -49,25 +49,7 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
 
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -101,7 +83,9 @@ body {
 }
 
 #hero{
-  @extend .tranCen;
+  position: relative;
+  top: 130px;
+  min-width: 360px;
   h1{
     font-size: 54.17px;
   }
@@ -139,7 +123,6 @@ body {
 #mainCon{
   position: relative;
   top: 162.33px;
-
 }
 
 #works{
