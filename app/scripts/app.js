@@ -1,19 +1,12 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name junyusSiteApp
- * @description
- * # junyusSiteApp
- *
- * Main module of the application.
- */
-angular
+var app = angular
     .module('junyusSiteApp', [
         'ngAnimate',
         'ngRoute',
         'ngTouch'
     ])
+
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -21,13 +14,6 @@ angular
                 controller: 'worksLayout',
                 controllerAs: 'main'
             })
-            /*
-            .when('/body', {
-                templateUrl: 'views/body.html',
-                controller: 'worksLayout',
-                // controllerAs: 'about'
-            })
-            */
             .when('/works', {
                 templateUrl: 'views/model.html',
                 //controller: 'worksLayout',
@@ -42,7 +28,12 @@ angular
                 redirectTo: '/'
             });
     })
-    .controller('worksLayout', function($scope) {
+    .controller('worksLayout', function($scope, $rootScope) {
+        $rootScope.down=false;
+        $rootScope.isTran=false;
+        if (angular.element(window).scrollTop() != 0) {
+            $rootScope.down = true;
+        }
         $scope.worksData = [
             {
                 left: "../images/main/Hummer.png",
