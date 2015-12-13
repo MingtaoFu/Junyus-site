@@ -1,6 +1,7 @@
 @import "base";
 #worksMainCon{
   padding-top: 75px;
+  position: relative;
 }
 
 
@@ -62,18 +63,31 @@ h4{
 }
 
 #tag{
-  float: right;
-  width: 33%;
+  position: absolute;
+  width: 100%;
+  section{
+    //left: -30px;
+  }
 }
-
 #heroImg{
   position: relative;
   text-align: center;
   height: 252px;
   max-width: 1366px;
-  //width: 100%;
   img{
     height: 100%;
     @extend .tranCenX;
   }
+  section{
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  #tag{
+    position: relative;
+  }
+}
+
