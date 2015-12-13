@@ -4,7 +4,34 @@
 
 $font16: 16.67px;
 $font33: 33.33px;
+$font18: 18px;
 $fontC137: rgb(137, 137, 137);
+
+@font-face {
+  font-family: 'plight';
+  src: url('fonts/proximanovalight/proximanovalight.eot');
+  src: local('proximanovalight'), url('fonts/proximanovalight/proximanovalight.woff') format('woff'),
+  url('fonts/proximanovalight/proximanovalight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'pregular';
+  src: url('fonts/ProximaNova-Regular.otf');
+}
+@font-face {
+  font-family: 'pbold';
+  src: url('fonts/Proxima%20Nova%20Bold.otf');
+}
+.fontsforweb_fontid_12950 {
+  font-family: 'plight' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+body{
+  font-family: plight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+}
 
 .tranCenX{
   position: absolute;

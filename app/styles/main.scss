@@ -4,6 +4,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 @import "base";
 
+.content{
+  color: rgb(137, 137, 137);
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -109,6 +113,7 @@ body {
       height: 100%;
       line-height: 100%;
       padding: 21px 15px;
+      font-family: pregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     .navbar-nav > li > a {
       font-size: $font16;
@@ -145,9 +150,10 @@ body {
 .itemRight > h3{
   font-size: $font33;
 }
-.itemRight > p{
+.itemRight > p, #contactP, .uniqueWords > p{
   font-size: $font16;
   line-height: 2em;
+  @extend .content;
 }
 
 .unique{
@@ -158,9 +164,31 @@ body {
       max-width: 100%;
     }
   }
+
+  section{
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 991.5px){
+  .uniqueEven{
+    section{
+      float: right;
+    }
+    .uniqueImg{
+      img{
+        padding-left: 8%;
+      }
+    }
+  }
+  .uniqueOdd{
+    .uniqueImg{
+      img{
+        padding-right: 8%;
+      }
+    }
+  }
+
   .worksItem{
     section{
       top: 50%;
@@ -179,6 +207,22 @@ body {
 }
 
 @media screen and (max-width: 991.5px){
+  .uniqueEven{
+    section{
+    }
+    .uniqueImg{
+      img{
+      }
+    }
+  }
+
+  .uniqueOdd{
+    .uniqueImg{
+      img{
+      }
+    }
+  }
+
   #works{
     h2{
       margin-bottom: 173px;
@@ -186,21 +230,20 @@ body {
   }
 }
 
-.uniqueEven{
-  section{
-    float: right;
-  }
-  .uniqueImg{
-    padding-right: 20%;
-  }
-}
-
-.uniqueOdd{
-  .uniqueImg{
-    padding-left: 20%;
-  }
-}
 
 #viewContainer{
   position: relative;
+}
+
+h2{
+  font-size: 35px;
+}
+
+#aboutContent{
+  margin-top: 106px;
+  margin-bottom: 106px;
+  font-size: $font18;
+  line-height: 1.5em;
+  @extend .content;
+
 }
