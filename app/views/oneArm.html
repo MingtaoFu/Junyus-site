@@ -6,7 +6,7 @@
                 Take control of the things width just one arm.
             </p>
         </section>
-        <img src="../images/Hummer/TitleBG.png">
+        <img src="../images/oneArm/BG.png">
     </div>
 
     <div class="row" id="tag">
@@ -51,46 +51,15 @@
         </section>
         <section class="row">
             <div class="mainColumn">
-                <!--
-                          <img src="../images/Hummer/Interview1.png" alt="interview" />
-                <img src="../images/Hummer/Interview2.png" alt="interview" />
-                -->
-                <h3>Problem Space</h3>
+                <h3>Insight on Products</h3>
                 <p>
-                    ln order to better understand the challenges involved and pinpoint the most crucial user demands, we
-                    spent one week on using and anatomizing near 10 popular related products, including Sing! by Smule,
-                    Rhythm Master by Tencent, SoundHound, ScoreCloud, Changba, etc. We also interviewed with a
-                    group of users who are obsessed with these products. From the analysis on products and the feed-
-                    backs from users, we had the insights below:
+                    Thanks to several major breakthroughs in Gesture Recognition, there came out a number of revolution-
+                    ary technologies that bring people to more intuitive interaction with machines, such as Kinect, Leap
+                    Motion, etc. However, the defects are also apparent: users are limited in specific area of activities to
+                    operate the machines, as they detect people's gestures via Image Recognition; people are not able to
+                    stay out of the space where the cameras cannot capture. Besides, as people keep further distance
+                    from the cameras, the recognition accuracy will decrease..
                 </p>
-                <ul>
-                    <li>
-                        <span class="black">Most of the users started using the products with the initial purpose of enhancing singing skill or
-                        musical training.</span> When asked about why they kept playing with such products, people's answers
-                        were basically varied> including playing or singing just for fun, getting to meet other users
-                        through the platforms, following those senior singers and so on. Yet, another idea is common
-                        among them: hoping to improve their singing skills.
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <span class="black">The products g¡ve little systematic feedbacks that are helpful to improve user's singing
-                            skill.</span> They are either highly community based Karaoke such as Sing! or exclusively
-                        entertaining games like Rhythm Master. Although they may provide scores after finishing a
-                        song according to users' performance, users cannot hone their skills of singing through such
-                        simple feedbacks.
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <span class="black">People want experiences that Bre both entertaining and educational.</span> They need products that
-                        are entertaining and meanwhile are capable of providing them with professional and systematic
-                        feedbacks through which they could improve singing performance correspondingly.
-                    </li>
-
-                </ul>
-
             </div>
 
 
@@ -98,121 +67,161 @@
 
         <section class="row">
             <div class="mainColumn">
-                <h3>Solution</h3>
+                <h3>Designing the Prototype</h3>
                 <p>
-                    In the light of insights above, we brainstormed several feasible ideas for our product. To ensure our
-                    methods could be justified in professional way, we have consulted students majoring in Vocal Music
-                    from Central Conservatory of Music. Eventually, we came up with the solution below:
+                    To break the constrains stated above, we designed an armband which measures electrical activity
+                    from people's muscles to identify five basic gestures from their hands. With the help of EMG sensors,
+                    we are able to collect the biological data from muscles when people make gestures. Then we trans-
+                    form the data into digital signal. After extracting and processing the characteristic information through
+                    our algorithms, gestures can be detected.
+                </p>
+                <p>
+                    The OneArm armband mainly consists of operational amplifier, instrumentation amplifier,
+                    power management integrated circuit, and microcontroller.
+                </p>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="allImgColumn">
+                <img src="../images/oneArm/BandDetail.png">
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="mainColumn">
+                <p>
+                    We 3D printed the cases that contain eletrical components and connect them together using springs to
+                    be flexible enough to fit in different sizes of arms.
+                </p>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="allImgColumn">
+                <img src="../images/oneArm/OnHand.png" style="padding-left: 50px;padding-right: 50px">
+            </div>
+        </section>
+
+
+        <section class="row">
+
+            <div class="mainColumn">
+                <h3>Application Client</h3>
+                <p>
+                    To let users update the real-time status about their OneArms, make personal settings and interact with
+                    compatible applications and devices, we designed the application client. With the client, people are
+                    able to switch the device or application controlled to another. We defined five basic gestures for users
+                    to operate: fist, double tap, spread fingers, wave right and wave left. which are native and intuitive
+                    actions that people make to control the things.
                 </p>
                 <h4>
-                    Pitch Detection
-                </h4>
-                <ul>
-                    <li>
-                        <span class="black">We provide users with songs in different levels according to the complexity
-                            of pitches.</span> Songs that have relatively narrow ranges of pitches are defined as easy
-                        levels, while those having broader ranges of pitches are harder.
-                    </li>
-                    <li>
-                        <span class="black">Users need to go through the game levels from easy to hard.</span> In each level, they are required to
-                        sing with correct pitches to catch up the standard pitches. To pass each level, they need to reach
-                        more than a specific amount of standard pitches.
-                    </li>
-                </ul>
-                <h4>Sense of Rhythm</h4>
-                <ul>
-                    <li>
-                        <span class="black">The moment users sing in each pitch should match the rhythm.</span> Singing earlier or later than the
-                        standard pitch will lower the scores.
-                    </li>
-                    <li>
-                        <span class="black">The difficulty of each level also involves the complexity of rhythms.</span> To pass each level, users
-                        need to match more than a specific amount of standard rhythms.
-                    </li>
-                </ul>
-                <p>
-                    According to the standard above, after users play each Song we will show the scores as a whole to
-                    them. Besides, feedbacks that contain which parts users need to improve are also available, and they
-                    can choose to go back to practice those parts again and again untill they sing good enough to reach
-                    the requirements.
-                </p>
-
-            </div>
-        </section>
-        <section class="row">
-
-            <div class="mainColumn">
-                <h3>The Design</h3>
-                <h4>
-                    Pitch Setup
+                    User Guide
                 </h4>
                 <p>
-                    Before getting started, user's pitch would be collected so that our algorithms adapt to user's voice.
+                    People will access to the necessary instruction on how to use OneArm. When user tries to make five
+                    different basic gestures in user Guide, software's standard model will be calibrated to user's personal
+                    data so that our algorithms could detect the gestures quicker.
                 </p>
             </div>
         </section>
-        <div class="row showImageCon padX35Con">
-            <img src="../images/Hummer/PitchSetup1.png"
-                 class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-sm-offset-0 col-xs-offset-1" />
-            <img src="../images/Hummer/PitchSetup2.png"
-                 class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-sm-offset-0 col-xs-offset-1" />
-            <img src="../images/Hummer/PitchSetup3.png"
-                 class="col-lg-4 col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 col-xs-10 col-xs-offset-1" />
-        </div>
+        <section class="row showImageCon padX20Con">
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/MagicArmBegin.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/FIST.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/SPREAD.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/LEFT.png">
+            </div>
+
+        </section>
 
         <section class="row">
             <div class="mainColumn">
-                <h4>Songs in Progress</h4>
+                <h4>OneArm Manager</h4>
                 <p>
-                    Users are accessible to three different songs in each level. Songs in next levels are not available until
-                    they pass the songs in the current one. They can also view their performance with the percentage of
-                    pitches match and rhythm match. With the feedbacks, users can choose to practice the weak points in
-                    each song.
+                    With the manager, users can use gestures to switch applications they currently control to another,
+                    making the non-mouse experience on computer possible. They can also view or manage the status of
+                    their OneArms in Setting.
                 </p>
             </div>
         </section>
-        <div class="row showImageCon padX5pCon">
-            <img src="../images/Hummer/Progress1.png"
-                 class="col-lg-3 col-md-3 col-sm-4 col-sm-offset-2 col-xs-6 col-md-offset-0" />
-            <img src="../images/Hummer/Progress3.png"
-                 class="col-lg-3 col-md-3 col-sm-4 col-sm-offset-1 col-xs-6 col-md-offset-0" />
-            <img src="../images/Hummer/Progress2.png"
-                 class="col-lg-3 col-md-3 col-sm-4 col-sm-offset-2 col-xs-6 col-md-offset-0" />
-            <img src="../images/Hummer/Main.png"
-                 class="col-lg-3 col-md-3 col-sm-4 col-sm-offset-1 col-xs-6 col-md-offset-0" />
-        </div>
+
+        <section class="row showImageCon padX20Con">
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/Application.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/Setting.png">
+            </div>
+        </section>
+
         <section class="row">
             <div class="mainColumn">
-                <h4>
-                    Playing the Game
-                </h4>
+                <h3>What Are the Differences from Myo?</h3>
                 <p>
-                    In the game, players sing to control a humming bird and navigate through adventurous terrains. Pitches
-                    of the song are displayed as blocks. Players need to sing well enough so that the bird hits the blocks
-                    and gain score.
+                    The idea of OneArm emerged nearly at the same time with Myo. Lin Zhao, the founder of OneArm,
+                    took the original idea of OneArm to participate in Imagine Cup held by Microsoft in April, 2013.
+                    OneArm got in the finals and was rewared as the second place in China Division. Meanwhile, the demo
+                    video of Myo first came out and greatly aroused people's interest. After Lin Zhao graduated in June,
+                    2014, he decided to start up his own company and turn OneArm into real commercial product.
+                </p>
+                <p>
+                    The principle of two products are basically the same; both utilized sEMG to detect people's gestures.
+                    Myo has already gained a number of customers and the API is also open to developers, which
+                    encourages more applications developed for Myo. OneArm currently is in the phase of demo and looking for
+                    Venture Capital.
+                </p>
+                <p>
+                    Our vision is to build OneArm for special demands from China's users, cutting in China's market. Thus,
+                    we have less complex functions than that of Myo. Myo's market price is 1,600RMB - 2,000RMB. We are
+                    confident that the cost of OneArm could be reduced to around 200RMB when it goes into production.
                 </p>
             </div>
         </section>
-        <div class="row showImageCon padX35Con">
-            <img src="../images/Hummer/Playing.png"
-                 class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-sm-offset-0 col-xs-offset-1" />
-            <img src="../images/Hummer/Playing2.png"
-                 class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-sm-offset-0 col-xs-offset-1" />
-            <img src="../images/Hummer/Playing3.png"
-                 class="col-lg-4 col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 col-xs-10 col-xs-offset-1" />
-        </div>
+
+        <section class="row showImageCon padX20Con" style="text-align: center">
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/ConceptualDesignA.png" style="max-height: 300px">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <img src="../images/oneArm/ConceptualDesignB.png" style="max-height: 300px">
+            </div>
+
+            <p>Conceptual Design of OneArm</p>
+        </section>
+
+
         <section class="row">
             <div class="mainColumn">
                 <h3>
-                    Our Vision
+                    Personal Thoughts
                 </h3>
                 <p>
-                    To us, Hummer is more than a game application. Through this project, we found that with the rapidly
-                    advancing technologies people desire simpler tools that can not only bring them intriguing
-                    entertainments, but also provide them with educational experiences. We attempt to create video games in which
-                    people could master specific skills in an intuitive and simple way.
+                    In March, 2015, I was invited by Lin Zhao to join the team as the part-time Design Lead at OneArm. This
+                    was my first startup's experience. It was totally different from any projects I have done before: I needed
+                    to consider the demands for real-world users, be involved with other team members to fix the problems,
+                    learn to illustrate the idea to investors clearly and many other things that I learned a lot from.
                 </p>
 
+                <p>
+                    In May, 2015, after joined the team for nearly three months, we eventually launched our first demo.
+                    We demonstrated OneArm in several entrepreneurial forums and met a lot of investors, some of which
+                    showed interest in funding us_ Although I did not continue to work with the team until OneArm goes
+                    into production and gets into the market for customers, I really appreciated the time I spent with them
+                    on working hard to build the product. I have gained lots of valuable experiences about startups and
+                    entrepreneurship, which better prepared me for future career with a wider vision.
+                </p>
             </div>
         </section>
         <video src=""></video>

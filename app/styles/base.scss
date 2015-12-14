@@ -83,14 +83,25 @@ h1,h2,h3,h4,h5,h6{
   @extend .col-md-4;
   @extend .col-xs-12;
 
-  .sideImgCon{
-
-  }
   img{
       max-width: 100%;
       margin-top: 20px;
       padding-left: 13%;
       padding-right: 13%;
+  }
+}
+.allImgColumn{
+  @extend .col-lg-8;
+  @extend .col-lg-offset-2;
+  @extend .col-sm-12;
+  @extend .col-md-10;
+  @extend .col-md-offset-1;
+  @extend .col-xs-12;
+  img{
+    max-width: 100%;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 

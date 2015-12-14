@@ -10,6 +10,7 @@ var app = angular
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
+                cache: false,
                 templateUrl: 'views/main.html',
                 controller: 'worksLayout',
                 controllerAs: 'main'
@@ -19,8 +20,8 @@ var app = angular
                 //controller: 'worksLayout',
                 // controllerAs: 'about'
             })
-            .when('/freeToGo', {
-                templateUrl: 'views/freeToGo.html',
+            .when('/oneArm', {
+                templateUrl: 'views/oneArm.html',
                 //controller: 'worksLayout',
                 // controllerAs: 'about'
             })
