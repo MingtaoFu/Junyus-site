@@ -86,13 +86,12 @@ h4{
   max-width: 1366px;
   img{
     height: 100%;
-    @extend .tranCenX;
   }
   section{
     position: absolute;
     z-index: 2;
     top: 40px;
-
+    width: 100%;
   }
 }
 

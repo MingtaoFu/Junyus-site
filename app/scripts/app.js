@@ -4,7 +4,7 @@ var app = angular
     .module('junyusSiteApp', [
         'ngAnimate',
         'ngRoute',
-        'ngTouch'
+        'ngTouch',
     ])
 
     .config(function ($routeProvider) {
@@ -17,7 +17,6 @@ var app = angular
             })
             .when('/works', {
                 templateUrl: 'views/model.html',
-                //controller: 'worksLayout',
                 // controllerAs: 'about'
             })
             .when('/oneArm', {

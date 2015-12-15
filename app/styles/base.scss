@@ -30,8 +30,12 @@ $fontC137: rgb(137, 137, 137);
 body{
   font-family: plight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6{
+  color: #333;
 }
+
+.rela{position: relative}
 
 .tranCenX{
   position: absolute;
