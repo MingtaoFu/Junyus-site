@@ -3,6 +3,7 @@
  * Created by mingtao on 12/8/15.
  */
 
+/*
 app.
     animation('.viewContainer', function($rootScope) {
         return {
@@ -65,3 +66,13 @@ new ScrollMagic.Scene({
 })
     .setPin("#my-sticky-element") // pins the element for the the scene's duration
     .addTo(scorllController); // assign the scene to the controller
+    */
+$('body').scrollspy({ target: '#navbar' });
+$(window).on('mousewheel', function() {
+    var top = $(window).scrollTop();
+    if (top >= 3) {
+        $('#navbar').addClass('small');
+    } else {
+        $('#navbar').removeClass('small');
+    }
+});

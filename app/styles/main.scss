@@ -8,6 +8,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   color: rgb(137, 137, 137);
 }
 
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -57,24 +58,12 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    //max-width: 730px;
-  }
-
   /* Remove the padding we set earlier */
   .header,
   .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
 
@@ -104,23 +93,70 @@ body {
   margin-bottom: 0;
   border: 0;
 }
+
+$time: 0.5s;
+
 .header {
   .myNav {
+    color: #333;
+
+    -webkit-transition: height $time;
+    -moz-transition: height $time;
+    -o-transition: height $time;
+    transition: height $time;
+
     background-color: white;
     height: 75.33px;
+
+    border: none;
     #brand {
+      color: #333;
       font-size: $font33;
       height: 100%;
       line-height: 100%;
       padding: 21px 15px;
       font-family: pregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
     }
+
+    #brand, .navbar-nav a{
+      -webkit-transition: font-size $time;
+      -moz-transition: font-size $time;
+      -o-transition: font-size $time;
+      transition: font-size $time;
+    }
+
+    .navbar-nav > li {
+      &.active{
+        a{
+          background-color: white;
+          border-bottom: #333 3px solid;
+        }
+      }
+    }
+
     .navbar-nav > li > a {
       font-size: $font16;
-      height: 74.33px;
-      line-height: 74.33px;
-      padding-bottom: 0;
-      padding-top: 0;
+      height: 75.33px;
+      line-height: 75.33px;
+      padding: 0;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    &.small{
+      border-bottom: 1px solid #e7e7e7;
+      height: 60px;
+      #brand{
+        font-size: 25px;
+        padding: 17px 15px;
+      }
+      .navbar-nav > li > a {
+        font-size: 14px;
+        height: 59px;
+        line-height: 59px;
+      }
     }
   }
 }

@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="styles/works.css">
     <!-- endbuild -->
 </head>
-<body ng-app="junyusSiteApp" class="full">
+<body ng-app="junyusSiteApp" class="full" data-spy="scroll" data-target="#navbar">
 <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
 <div class="header">
-    <div class="navbar navbar-default navbar-fixed-top myNav" role="navigation">
-        <div class="container heiFull">
+    <div class="navbar navbar-default navbar-fixed-top myNav" role="navigation" id="navbar">
+        <div class="container heiFull nav">
             <div class="navbar-header heiFull">
                 <a class="navbar-brand" href="#/" id="brand">
                     JUNYU<b>HUANG</b>
@@ -34,9 +34,9 @@
 
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#/">WORK</a></li>
-                    <li><a ng-href="#/about">ABOUT</a></li>
-                    <li><a ng-href="#/">CONTACT</a></li>
+                    <li><a href="#worksLink">WORK</a></li>
+                    <li><a href="#aboutLink">ABOUT</a></li>
+                    <li><a href="#contactLink">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -73,6 +73,7 @@
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/jquery-touchswipe/jquery.touchSwipe.js"></script>
 <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

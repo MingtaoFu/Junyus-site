@@ -15,8 +15,8 @@ var app = angular
                 controller: 'worksLayout',
                 controllerAs: 'main'
             })
-            .when('/works', {
-                templateUrl: 'views/model.html',
+            .when('/hummer', {
+                templateUrl: 'views/hummer.html',
                 // controllerAs: 'about'
             })
             .when('/oneArm', {
@@ -42,7 +42,8 @@ var app = angular
                     content: 'Hummer is a game application that aims to help people' +
                     'sing better.In the game, players sing through the microphone to control' +
                     'a hummingbird and navigate through adventurous terrains.'
-                }
+                },
+                url: ''
             },
             {
                 left: "../images/main/OneArm.png",
@@ -52,7 +53,8 @@ var app = angular
                     ' using gesture control. With the software client, users are able to take control' +
                     ' of applications on computer or other devices wit h five basic gestures ' +
                     'and their specific combinations'
-                }
+                },
+                url: '#/oneArm'
             },
             {
                 left: "../images/main/HeadringApp.png",

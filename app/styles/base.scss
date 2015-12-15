@@ -7,6 +7,11 @@ $font33: 33.33px;
 $font18: 18px;
 $fontC137: rgb(137, 137, 137);
 
+
+blockquote{
+  border-left: none;
+}
+
 @font-face {
   font-family: 'plight';
   src: url('fonts/proximanovalight/proximanovalight.eot');
@@ -29,6 +34,13 @@ $fontC137: rgb(137, 137, 137);
 
 body{
   font-family: plight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a{
+  &:hover{
+    text-decoration: none !important;
+
+  }
 }
 
 h1,h2,h3,h4,h5,h6{
