@@ -44,7 +44,7 @@ var app = angular
                     'sing better.In the game, players sing through the microphone to control' +
                     'a hummingbird and navigate through adventurous terrains.'
                 },
-                url: ''
+                url: '/hummer'
             },
             {
                 left: "../images/main/OneArm.png",
@@ -55,7 +55,7 @@ var app = angular
                     ' of applications on computer or other devices wit h five basic gestures ' +
                     'and their specific combinations'
                 },
-                url: '#/oneArm'
+                url: '/oneArm'
             },
             {
                 left: "../images/main/HeadringApp.png",
