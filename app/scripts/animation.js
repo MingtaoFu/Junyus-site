@@ -68,7 +68,7 @@ new ScrollMagic.Scene({
     .addTo(scorllController); // assign the scene to the controller
     */
 $('body').scrollspy({ target: '#navbar' });
-$(window).on('mousewheel', function() {
+$(window).on('scroll', function() {
     var top = $(window).scrollTop();
     if (top >= 3) {
         $('#navbar').addClass('small');

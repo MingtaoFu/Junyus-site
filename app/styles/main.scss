@@ -75,9 +75,32 @@ body {
   @extend .tranCenX;
 }
 
+@media screen and (min-width: 1200px) {
+  #hero{
+    width: 695px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hero{
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+    -moz-transform: translate(-50%, -50%) scale(0.8);
+    -ms-transform: translate(-50%, -50%) scale(0.8);
+    -o-transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  /*
+  #navbar{
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  */
+}
 #hero{
-  position: relative;
-  top: 130px;
+  //top: 130px;
   min-width: 360px;
   h1{
     font-size: 54.17px;
