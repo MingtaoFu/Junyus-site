@@ -110,3 +110,30 @@ h4{
   }
 }
 
+
+.PNLink{
+  .PLink{
+    float: left;
+
+  }
+  .NLink{
+    float: right;
+
+  }
+
+  .Link{
+    div, img{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div > p{
+      margin: 0;
+    }
+    div:first-child{
+      line-height: 28px;
+    }
+    div:last-child{
+      line-height: 22px;
+    }
+  }
+}
