@@ -7,7 +7,7 @@ var app = angular
         'ngTouch',
     ])
 
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 cache: false,
@@ -27,6 +27,7 @@ var app = angular
             .otherwise({
                 redirectTo: '/'
             });
+        $locationProvider.html5Mode(true);
     })
     .controller('worksLayout', function($scope, $rootScope) {
         $rootScope.down=false;
