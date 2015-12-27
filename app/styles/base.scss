@@ -47,6 +47,12 @@ h1,h2,h3,h4,h5,h6{
   color: #333;
 }
 
+.marginY60{
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+
 .rela{position: relative}
 
 .tranCenX{
@@ -106,23 +112,53 @@ h1,h2,h3,h4,h5,h6{
       padding-right: 13%;
   }
 }
-.allImgColumn{
-  @extend .col-lg-8;
-  @extend .col-lg-offset-2;
-  @extend .col-sm-12;
-  @extend .col-md-10;
-  @extend .col-md-offset-1;
-  @extend .col-xs-12;
-  img{
-    max-width: 100%;
 
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-}
+
 
 @media screen and (max-width: 768px){
   .sideColumn{
     top: 0 !important;
   }
 }
+
+.padX35Con{
+  img{
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+.padX5pCon{
+  img{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+.padX30Con{
+  img{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.padX20Con{
+  img{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.padX40Con{
+  img{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.padX60Con{
+  img{
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+

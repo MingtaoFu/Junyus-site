@@ -24,6 +24,9 @@ var app = angular
                 //controller: 'worksLayout',
                 // controllerAs: 'about'
             })
+            .when('/overHUST', {
+                templateUrl: 'views/overHUST.html',
+            })
             .otherwise({
                 redirectTo: '/'
             });
@@ -74,7 +77,8 @@ var app = angular
                     content: 'OverHust is a mobile application that utilizes street view maps to help users ' +
                     'navigate routines on campus.With highly detailed panoramic street-level photos, users are' +
                     ' better able to find the destinations,or just take a visual tour on campus within the app. '
-                }
+                },
+                url: '/overHUST'
             }
         ];
         $scope.unique = [

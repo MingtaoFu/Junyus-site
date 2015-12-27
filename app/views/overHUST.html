@@ -1,0 +1,179 @@
+<div id="worksMainCon">
+    <div id="heroImg">
+        <section class="textL">
+            <div class="container">
+                <h3>OverHUST</h3>
+                <p>
+                    Explore the campus with street view.
+                </p>
+                <button>DOWNLOAD THE APP</button>
+            </div>
+        </section>
+        <img src="../images/OverHUST/BG.png">
+    </div>
+
+    <div class="container rela">
+        <div class="row" id="tag">
+            <section class="col-lg-4 col-sm-4 col-md-4 col-lg-offset-8 col-sm-offset-8 col-md-offset-8">
+                <h3>Project Details</h3>
+
+                <h4>MY ROLE</h4>
+                <p>
+                    Designer
+                </p>
+
+                <h4>DURATION</h4>
+                <p>
+                    October, 2013 - February, 2014
+                </p>
+                <h4>TEAMMATES</h4>
+                <p>
+                    Hongwei Fan, Guanchu Shen, Jiahang Li
+                </p>
+
+            </section>
+        </div>
+
+        <div class="rela" id="detail">
+            <section class="row">
+                <div class="mainColumn">
+                    <h3>Background</h3>
+                    <p>
+                        OverHUST was derived in 2013 "UT-STARCOM Seed Cup" Mobile App Developing Competition. With
+                        the topic "A Better Life on Campus" of the competition, we attempted to build an app
+                        that allows users to navigate in street view map on campus. The project aims to help the
+                        freshmen or other students and staff who are not familiar with the campus to find their
+                        destinations. After two-month development, our team got in the finals and won the First
+                        Prize out of more than 50 teams.
+                    </p>
+                </div>
+
+            </section>
+            <section class="row">
+                <div class="mainColumn">
+                    <h3>The Problem</h3>
+                    <p>
+                        Huazhong University of Science & Technology (HUST) is among the largest universities in China. The
+                        area of HUST is about 5,333 square kilometers. When I first came to my university, I found that the
+                        campus was so large that it took me a long time to get familiar with the campus. In fact, after I spent
+                        one year on living in Apartment 16, Yunyuan, I even could not easily find the Apartment 15, Yunyuan.
+                    </p>
+
+                    <p>
+                        To justify the problem stated above, we asked a group of students who lived on campus for less than
+                        one year about how they get to the buildings they have never been to. Many of them claimed that they
+                        were usually confused about the structure of the buildings on campus and it often took a significant
+                        amount of time for them to find out the buildings. When they got lost, they would use map apps to
+                        navigate. However, the apps like Google Maps, Baidu Maps did not provide much detailed information
+                        about buildings on campus since they mainly focus on the streets in cities. These products could not
+                        always satisfy students' need.
+                    </p>
+                    <div class="imgColumnOne">
+                        <img src="../images/OverHUST/HUSTMap.png">
+                    </div>
+                </div>
+
+                <div class="mainColumn">
+                    <h3>Designing the Problem-solving Features</h3>
+                    <p>
+                        We took advantage of street view map SDK from Tencent Maps and develop an app featured with four
+                        major functions based on campus.
+                    </p>
+                    <div class="imgColumnMore">
+                        <img src="../images/OverHUST/Start.png"
+                             class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-lg-offset-1">
+                        <img src="../images/OverHUST/Main.png"
+                             class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-lg-offset-1">
+                    </div>
+                    <h4>
+                        MAP
+                    </h4>
+                    <p>
+                        We pulled the data from the SDK and recalculate the geographic coordinates of each position
+                        throughout the campus. When users enter the function MAP, the app will pinpoint their current
+                        locations and load the corresponding street view. The function allows users to walk over the campus
+                        without going out in person.
+                    </p>
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="imgColumnMore">
+                    <img src="../images/OverHUST/Map1.png"
+                         class="marginY60 col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-8 col-sm-offset-2">
+                    <img src="../images/OverHUST/Map2.png"
+                         class="marginY60 col-lg-offset-0 col-lg-5 col-md-offset-1 col-md-5 col-sm-8 col-sm-offset-2">
+                </div>
+            </section>
+            <section class="row">
+                <div class="mainColumn">
+                    <h4>
+                        NAVIGATION
+                    </h4>
+                    <p>
+                        Since the original map data from SDK does not include navigation service, we designed an algorithm
+                        that enables the navigation between any two buildings on campus. The app will guide people to the
+                        buildings based on street view map. People no longer need to look at those confusing traditional map
+                        from vertical view, greatly improving the eciency of finding out their destinations.
+                    </p>
+                </div>
+            </section>
+            <div class="row showImageCon padX60Con">
+                <img src="../images/OverHUST/Navigation.png"
+                     class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-sm-offset-0 col-xs-offset-1" />
+                <img src="../images/OverHUST/Navigating1.png"
+                     class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-sm-offset-0 col-xs-offset-1" />
+                <img src="../images/OverHUST/Navigating2.png"
+                     class="col-lg-4 col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 col-xs-10 col-xs-offset-1" />
+            </div>
+            <section class="row">
+                <div class="mainColumn">
+                    <h4>
+                        SEARCH
+                    </h4>
+                    <p>
+                        For many freshmen, they want to explore the new places that they are interested in. For example,
+                        HUST has 34 different canteens on campus, so many students may want to try various delicious foods
+                        from dierent cafeterias. We put all the buildings into the database. Users could explore the places
+                        throughout the campus by typing in key words, such as cafeteria, teaching building, or supermarket.
+                        For each search result, user could choose either Go There (trigger navigation) or Street View (load the
+                        street view of the building).
+                    </p>
+                    <div class="imgColumnMore">
+                        <img src="../images/OverHUST/Search.png"
+                             class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-lg-offset-1">
+                        <img src="../images/OverHUST/SearchResult.png"
+                             class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-lg-offset-1">
+                    </div>
+                    <h4>
+                        BUS
+                    </h4>
+                    <p>
+                        We attempted to provide students with real-time information about school buses so that they could
+                        save their time on waiting for school buses. To implement this, we need to install GPS modules in the
+                        buses. We are persuading bus drivers to help us do this when the app has served many enough users.
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="row">
+                <div class="mainColumn">
+                    <h3>Personal Thoughts</h3>
+                    <p>
+                        This was the first project that I tried to transform my idea to problems I observed into real product.
+                        In the design phase, I analyzed the features of existing products, studied excellent design works, and
+                        conducted user survey among a group of students, which brought me to pinpoint the real demands of
+                        users. As we had received lots of positive feedbacks and praises for the product, I enjoyed a great
+                        sense of accomplishments that what I designed had improved people’s lives throughout the campus.
+                    </p>
+                     <div class="imgColumnOne">
+                        <img src="../images/OverHUST/Prize.png">
+                    </div>
+                </div>
+
+            </section>
+            <video src=""></video>
+        </div>
+    </div>
+</div>
