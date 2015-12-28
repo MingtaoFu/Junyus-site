@@ -55,6 +55,7 @@ h4{
 }
 
 #heroImg{
+  @extend .tranCenX;
   position: relative;
   text-align: center;
   height: 252px;
