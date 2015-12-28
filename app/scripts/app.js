@@ -74,6 +74,16 @@ var app = angular
                 }
             },
             {
+                left: "../images/main/UniqueWeb.png",
+                right: {
+                    title: 'Unique Studio',
+                    content: 'The website demonstrates an overview of Unique Studio, a pioneering student-run' +
+                    ' studios in HUST. The website allows people who are interested in the Studio to get to know' +
+                    ' more about its history, people, achievements, and updates.'
+                },
+                url: '/overHUST'
+            },
+            {
                 left: "../images/main/OverHUSTpng.png",
                 right: {
                     title: 'OverHust',
