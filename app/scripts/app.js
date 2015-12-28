@@ -27,6 +27,9 @@ var app = angular
             .when('/overHUST', {
                 templateUrl: 'views/overHUST.html',
             })
+            .when('/uniqueStudio', {
+                templateUrl: 'views/unique.html',
+            })
             .otherwise({
                 redirectTo: '/'
             });
