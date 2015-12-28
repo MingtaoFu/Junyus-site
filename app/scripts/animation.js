@@ -76,3 +76,9 @@ $(window).on('scroll', function() {
         $('#navbar').removeClass('small');
     }
 });
+
+$('.navA').on('click', function() {
+    if(window.innerWidth < 768) {
+        $('.navbar-toggle').click();
+    }
+});
