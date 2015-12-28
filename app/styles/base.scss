@@ -99,6 +99,12 @@ h1,h2,h3,h4,h5,h6{
   @extend .col-xs-12;
 }
 
+.allColumn{
+  @extend .col-lg-12;
+  @extend .col-md-12;
+  @extend .col-sm-12;
+  @extend .col-xs-12;
+}
 .sideColumn{
   @extend .col-lg-4;
   @extend .col-sm-4;
