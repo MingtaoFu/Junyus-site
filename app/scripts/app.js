@@ -99,30 +99,31 @@ var app = angular
                 img: "../images/main/UniqueStudioPic.png",
                 intro: {
                     title: "Unique Studio",
-                    content: "hahah ahaha hahaha hahahh ahahahahah ahhahaha hahaha hhaha" +
-                    "haha hahah ahah hahahah ahahh ah ahahah hahahah hahahahhaha hahahha" +
-                    "hahah ahahhah ahahahha lha hahahah hahahaha hahhaha hahhahah"
-
+                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a student-run studio at HUST" +
+                    " that focuses on Internet technologies. The Unique Studio consists of 8 different groups of over 100 " +
+                    "undergraduates. During my term, we had won several awards in national and international competitions." +
+                    " We also launched 10+ Internet products, two of which had successfully turned into startups and" +
+                    " raised 1 million RMB funds separately."
                 }
             },
             {
                 img: "../images/main/Design.png",
                 intro: {
-                    title: "Unique Studio",
-                    content: "hahahah ahahah ahahaha lhhaha lhahahahahha lhahahah ahahhaha" +
-                    "hahah ahahah ahhahahah ahahhaha hahahhahaha hhahahahha hahahahha" +
-                    "hahahkk iahah hahahahahh ahahah ahahha lhahahah lahhahah ahhahah"
-
+                    title: "Design Team",
+                    content: "In 2013 – 2014, I served as the Director of Design Team in Unique Studio. During my term," +
+                    " I led a team of 12 student designers to be responsible for the design of 10+ products. I organized" +
+                    " regular meetups, workshops and salons in which people shared ideas concerning different topics" +
+                    " on design and brainstormed creative solutions to the topic-related issues. "
                 }
             },
             {
                 img: "../images/main/HackDay.png",
                 intro: {
-                    title: "Unique Studio",
-                    content: "hahahah ahahah ahahaha lhhaha lhahahahahha lhahahah ahahhaha" +
-                    "hahah ahahah ahhahahah ahahhaha hahahhahaha hhahahahha hahahahha" +
-                    "hahahkk iahah hahahahahh ahahah ahahha lhahahah lahhahah ahhahah"
-
+                    title: "Unique Hack Day",
+                    content: "I directed one of the largest college hackathon in China, Unique Hack Day, aiming to " +
+                    "bring such an event that inspires people with a newfound desire to change the society to China’s" +
+                    " college students. We successfully recruited 20 sponsor companies to support our event and" +
+                    " invited 150 students out of over 700 applicants from China, U.S., Russia and India to participate."
                 }
             }
 
