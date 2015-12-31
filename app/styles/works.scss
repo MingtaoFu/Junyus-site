@@ -122,8 +122,8 @@ h4{
 .imgColumnOne,.imgColumnMore{
   img{
     max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -136,8 +136,8 @@ h4{
   @extend .col-xs-12;
   img{
     max-width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
 
@@ -150,3 +150,43 @@ h4{
     float: right;
   }
 }
+
+//---------------FreeToGo------------
+#twoPic2 {
+  height: 500px;
+  & > div {
+    text-align: center;
+    height: 100%;
+    & > img {
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #twoPic2 {
+    .img1 {
+      float: right;
+      margin-right: 15px;
+    }
+    .img2 {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+
+  .twoPic3 {
+
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .twoPic2 {
+
+  }
+  .twoPic3 {
+
+  }
+}
+//-----------------------------------

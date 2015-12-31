@@ -30,6 +30,9 @@ var app = angular
             .when('/uniqueStudio', {
                 templateUrl: 'views/unique.html',
             })
+            .when('/freeToGo', {
+                templateUrl: 'views/freeToGo.html',
+            })
             .otherwise({
                 redirectTo: '/'
             });
