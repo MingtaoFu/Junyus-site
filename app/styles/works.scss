@@ -181,12 +181,11 @@ h4{
 }
 
 
-@media screen and (max-width: 768px) {
-  .twoPic2 {
-
-  }
-  .twoPic3 {
-
+.videoCon{
+  margin-top:20px;
+  margin-bottom: 20px;
+  text-align: center;
+  iframe{
+    max-width: 100%;
   }
 }
-//-----------------------------------
