@@ -74,7 +74,8 @@ var app = angular
                     'avoid obstacles and navigate to a given destination. With vibration from the headring' +
                     ' and voice navigation from the mobile application, users are guided within the given' +
                     ' route to the destination. '
-                }
+                },
+                url: '/freeToGo'
             },
             {
                 left: "../images/main/UniqueWeb.png",
@@ -84,7 +85,7 @@ var app = angular
                     ' studios in HUST. The website allows people who are interested in the Studio to get to know' +
                     ' more about its history, people, achievements, and updates.'
                 },
-                url: '/overHUST'
+                url: '/uniqueStudio'
             },
             {
                 left: "../images/main/OverHUSTpng.png",
