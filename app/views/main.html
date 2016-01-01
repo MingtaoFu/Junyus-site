@@ -58,7 +58,7 @@
                 <section class="uniqueWords col-md-5 col-md-offset-0 col-sm-offset-1 col-sm-10 col-lg-5 col-xs-12">
                     <h3 style="margin-top: 0">{{item.intro.title}}</h3>
                     <p>{{item.intro.content}}</p>
-                    <a class="viewMore">VIEW MORE</a>
+                    <a href="{{item.url}}" class="viewMore" target="_blank">VIEW MORE</a>
                 </section>
             </div>
         </div>
@@ -80,18 +80,19 @@
             <h4>CONTACT INFO</h4>
             <p>everrocket@gmail.com</p>
             <div id="contactMedia">
-                <a>
+                <a href="https://www.facebook.com/everrocket" target="_blank">
                     <img src="../images/main/Facebook.png">
                 </a>
 
-                <a>
+                <a href="https://cn.linkedin.com/in/junyuhuang" target="_blank">
                     <img src="../images/main/LinkedIn.png">
                 </a>
 
-                <a>
+                <a href="javascript:void 0" onclick="document.getElementById('wechatBox').style.display='block'">
                     <img src="../images/main/WeChat.png">
                 </a>
-                <a class="viewMore backToTop" style="margin-left: 60px" href="javascript:window.scrollTo(0,0)">
+                <a class="viewMore backToTop" style="margin-left: 60px"
+                   href='javascript:$("html").animate({"scrollTop": "0px"},400);$("body").animate({"scrollTop": "0px"},400)'>
                     BACK TO TOP
                 </a>
             </div>

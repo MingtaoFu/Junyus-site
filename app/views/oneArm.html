@@ -239,7 +239,10 @@
 
         <div class="preNextLink">
             <a class="viewMore prev" href="/hummer">PREVIOUS</a>
-            <a class="viewMore backToTop" href="javascript:window.scrollTo(0,0)">BACK TO TOP</a>
+            <a class="viewMore backToTop"
+               href='javascript:$("html").animate({"scrollTop": "0px"},400);$("body").animate({"scrollTop": "0px"},400)'>
+                BACK TO TOP
+            </a>
             <a class="viewMore next" href="/freeToGo">NEXT</a>
         </div>
 

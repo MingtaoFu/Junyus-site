@@ -108,7 +108,8 @@ var app = angular
                     "undergraduates. During my term, we had won several awards in national and international competitions." +
                     " We also launched 10+ Internet products, two of which had successfully turned into startups and" +
                     " raised 1 million RMB funds separately."
-                }
+                },
+                url: 'http://www.hustunique.com'
             },
             {
                 img: "../images/main/Design.png",
@@ -128,7 +129,8 @@ var app = angular
                     "bring such an event that inspires people with a newfound desire to change the society to China’s" +
                     " college students. We successfully recruited 20 sponsor companies to support our event and" +
                     " invited 150 students out of over 700 applicants from China, U.S., Russia and India to participate."
-                }
+                },
+                url: 'http://hacks.hustunique.com/'
             }
 
         ];
