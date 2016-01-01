@@ -36,6 +36,20 @@
   }
 }
 
-.gallery{
+.preNextLink{
+  margin-top: 20px;
 
+  *{
+    margin-bottom: 20px;
+  }
+  .prev{
+    float: left;
+  }
+  .next{
+    float: right;
+  }
+  .backToTop{
+    position: absolute;
+    @extend .tranCenX;
+  }
 }
