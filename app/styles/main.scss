@@ -287,7 +287,7 @@ $time: 0.5s;
     }
   }
   #works{
-    h2{
+    .h2Con{
       margin-bottom: 275px;
     }
   }
@@ -311,19 +311,18 @@ $time: 0.5s;
   }
 
   #works{
-    h2{
+    .h2Con{
       margin-bottom: 173px;
     }
   }
 }
-
 
 #viewContainer{
   position: relative;
 }
 
 h2{
-  font-size: 35px;
+  font-size: 41.67px !important;
 }
 
 #aboutContent{
@@ -352,7 +351,14 @@ h2{
   }
 }
 
-
 .backToTop{
   position: absolute;
+}
+
+.line{
+  width: 112px;
+  height: 4px;
+  background-color: #333;
+  margin-left: auto;
+  margin-right: auto;
 }

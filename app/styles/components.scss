@@ -44,9 +44,17 @@
   }
   .prev{
     float: left;
+    img{
+      position: relative;
+      top: 9px;
+    }
   }
   .next{
     float: right;
+    img{
+      position: relative;
+      top: 9px;
+    }
   }
   .backToTop{
     position: absolute;
