@@ -42,7 +42,7 @@ body{
 }
 
 a{
-  &:hover, &:active{
+  &:hover, &:active, &:focus{
     text-decoration: none !important;
   }
 }
