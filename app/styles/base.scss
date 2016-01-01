@@ -37,9 +37,8 @@ body{
 }
 
 a{
-  &:hover{
+  &:hover, &:active{
     text-decoration: none !important;
-
   }
 }
 
