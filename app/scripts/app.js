@@ -9,6 +9,13 @@ var app = angular
     .config(function($compileProvider){
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/);
     })
+    .animation('.viewContainer', function() {
+        return {
+            enter: function() {
+                window.scrollTo(0,0);
+            }
+        }
+    })
 
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
@@ -138,5 +145,4 @@ var app = angular
             }
 
         ];
-        $scope.designImg = []
     });
