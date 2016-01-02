@@ -6,6 +6,9 @@ var app = angular
         'ngRoute',
         'ngTouch',
     ])
+    .config(function($compileProvider){
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/);
+    })
 
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
@@ -90,7 +93,7 @@ var app = angular
             {
                 left: "../images/main/OverHUSTpng.png",
                 right: {
-                    title: 'OverHust',
+                    title: 'OverHUST',
                     content: 'OverHust is a mobile application that utilizes street view maps to help users ' +
                     'navigate routines on campus.With highly detailed panoramic street-level photos, users are' +
                     ' better able to find the destinations,or just take a visual tour on campus within the app. '
@@ -119,7 +122,8 @@ var app = angular
                     " I led a team of 12 student designers to be responsible for the design of 10+ products. I organized" +
                     " regular meetups, workshops and salons in which people shared ideas concerning different topics" +
                     " on design and brainstormed creative solutions to the topic-related issues. "
-                }
+                },
+                url:"javascript:openDesignBox()"
             },
             {
                 img: "../images/main/HackDay.png",
@@ -134,4 +138,5 @@ var app = angular
             }
 
         ];
+        $scope.designImg = []
     });
