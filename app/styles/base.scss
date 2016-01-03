@@ -37,7 +37,7 @@ iframe{
 }
 
 body{
-  font-family: pregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: plight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a{
@@ -128,10 +128,16 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-
 @media screen and (max-width: 768px){
   .sideColumn{
     top: 0 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sideColumn, .sideImgColumn{
+    img{
+      padding-left: 0;
+    }
   }
 }
 
@@ -139,6 +145,14 @@ h1,h2,h3,h4,h5,h6{
   img{
     padding-right: 35px;
     padding-left: 35px;
+  }
+}
+
+.padX3pCon {
+  img {
+    padding-right: 3%;
+    padding-left: 3%;
+
   }
 }
 

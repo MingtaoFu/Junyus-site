@@ -239,7 +239,7 @@ $time: 0.5s;
 }
 .itemRight > p, #contactP, .uniqueWords > p{
   font-size: $font16;
-  line-height: 2em;
+  line-height: 1.8em;
   @extend .content;
 }
 
@@ -337,7 +337,7 @@ h2{
   margin-top: 106px;
   margin-bottom: 106px;
   font-size: $font18;
-  line-height: 1.5em;
+  line-height: 1.8em;
   @extend .content;
 
 }

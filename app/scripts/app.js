@@ -12,6 +12,8 @@ var app = angular
     .animation('.viewContainer', function($location) {
         return {
             enter: function() {
+                console.log($location.url());
+                console.log($location.hash());
                 if(!(/^\/$|^\/#.*/).test($location.url()))
                     window.scrollTo(0,0);
             }
@@ -113,7 +115,7 @@ var app = angular
                 img: "../images/main/UniqueStudioPic.png",
                 intro: {
                     title: "Unique Studio",
-                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a student-run studio at HUST" +
+                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a studio at HUST" +
                     " that focuses on Internet technologies. The Unique Studio consists of 8 different groups of over 100 " +
                     "undergraduates. During my term, we had won several awards in national and international competitions." +
                     " We also launched 10+ Internet products, two of which had successfully turned into startups and" +

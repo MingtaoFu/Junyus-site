@@ -1,3 +1,12 @@
+<style>
+    .imgColumnOne img {
+        max-width: 85% !important;
+        display: inline-block !important;
+    }
+    .imgColumnOne,.item{
+        text-align: center;
+    }
+</style>
 <div id="worksMainCon">
     <div id="heroImg" style="background-image: url('../images/UniqueStudio/BG.png')">
         <section class="textL">
@@ -7,7 +16,7 @@
                     Official website 2014 – 2015 version
                     <br>
                     <a style="color: white" href="http://2014.hustunique.com:8100/" target="_blank">
-                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span>Website
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;Website
                     </a>
                 </p>
             </div>
@@ -74,14 +83,7 @@
 
                     <div class="galleryCon">
                         <h4>Group</h4>
-                        <div class="btn-group galleryCtrl" role="group" aria-label="...">
-                            <a type="button" class="btn btn-default" href="#carousel-generic" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </a>
-                            <a type="button" class="btn btn-default" href="#carousel-generic" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </a>
-                        </div>
+
 
                         <div class="imgColumnOne">
                             <div id="carousel-generic" class="carousel slide" data-ride="carousel">
@@ -116,6 +118,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="btn-group galleryCtrl" role="group" aria-label="...">
+                            <a type="button" class="btn btn-default leftRightBtn" href="#carousel-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            </a>
+                            <a type="button" class="btn btn-default leftRightBtn" href="#carousel-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="galleryCon">
@@ -127,14 +137,7 @@
 
                     <div class="galleryCon">
                         <h4>Works</h4>
-                        <div class="btn-group galleryCtrl" role="group" aria-label="...">
-                            <a type="button" class="btn btn-default" href="#carousel-generic1" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </a>
-                            <a type="button" class="btn btn-default" href="#carousel-generic1" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </a>
-                        </div>
+
                         <div class="imgColumnOne">
                             <div id="carousel-generic1" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
@@ -164,18 +167,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="btn-group galleryCtrl" role="group" aria-label="...">
+                            <a type="button" class="btn btn-default leftRightBtn" href="#carousel-generic1" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            </a>
+                            <a type="button" class="btn btn-default leftRightBtn" href="#carousel-generic1" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="galleryCon">
                         <h4>Contact</h4>
-                        <div class="btn-group galleryCtrl" role="group" aria-label="...">
-                            <a type="button" class="btn btn-default" href="#carousel-generic2" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </a>
-                            <a type="button" class="btn btn-default" href="#carousel-generic2" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </a>
-                        </div>
+
                         <div class="imgColumnOne">
                             <div id="carousel-generic2" class="carousel slide" data-ride="carousel">
 
@@ -200,6 +204,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="btn-group galleryCtrl" role="group" aria-label="...">
+                            <a type="button" class="btn btn-default leftRightBtn" href="#carousel-generic2" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            </a>
+                            <a type="button" class="btn btn-default leftRightBtn" href="#carousel-generic2" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -221,3 +233,8 @@
     </div>
 </div>
 <footer style="color: #333;text-align: center;margin: 15px">© 2015 Junyu Huang. All Rights Reserved</footer>
+<script>
+    $('.leftRightBtn').on('click', function(e) {
+        e.preventDefault();
+    })
+</script>
