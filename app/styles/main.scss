@@ -86,11 +86,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   #hero{
-    -webkit-transform: translate(-50%, -50%) scale(0.8);
     -moz-transform: translate(-50%, -50%) scale(0.8);
     -ms-transform: translate(-50%, -50%) scale(0.8);
     -o-transform: translate(-50%, -50%) scale(0.8);
     transform: translate(-50%, -50%) scale(0.8);
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
   }
   .navbar{
     li{
@@ -139,10 +139,10 @@ $time: 0.5s;
   .myNav {
     color: #333;
 
-    -webkit-transition: height $time;
     -moz-transition: height $time;
     -o-transition: height $time;
     transition: height $time;
+    -webkit-transition: height $time;
 
     background-color: white;
     height: 75.33px;
@@ -168,10 +168,10 @@ $time: 0.5s;
     }
 
     #brand, .navbar-nav a{
-      -webkit-transition: font-size $time;
       -moz-transition: font-size $time;
       -o-transition: font-size $time;
       transition: font-size $time;
+      -webkit-transition: font-size $time;
     }
 
     .navbar-nav > li {
