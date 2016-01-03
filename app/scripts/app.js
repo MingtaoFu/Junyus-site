@@ -9,14 +9,14 @@ var app = angular
     .config(function($compileProvider){
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/);
     })
-    .animation('.viewContainer', function() {
+    .animation('.viewContainer', function($location) {
         return {
             enter: function() {
-                window.scrollTo(0,0);
+                if(!$location.url().match(/^\/$ || ^\/#/))
+                    window.scrollTo(0,0);
             }
         }
     })
-
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
@@ -46,7 +46,7 @@ var app = angular
             .otherwise({
                 redirectTo: '/'
             });
-        $locationProvider.html5Mode(true);
+        //$locationProvider.html5Mode(true);
     })
     .controller('worksLayout', function($scope, $rootScope) {
         $rootScope.down=false;
@@ -63,7 +63,7 @@ var app = angular
                     'sing better.In the game, players sing through the microphone to control' +
                     'a hummingbird and navigate through adventurous terrains.'
                 },
-                url: '/hummer'
+                url: '/#hummer'
             },
             {
                 left: "../images/main/OneArm.png",
@@ -74,7 +74,7 @@ var app = angular
                     ' of applications on computer or other devices wit h five basic gestures ' +
                     'and their specific combinations'
                 },
-                url: '/oneArm'
+                url: '/#oneArm'
             },
             {
                 left: "../images/main/HeadringApp.png",
@@ -85,7 +85,7 @@ var app = angular
                     ' and voice navigation from the mobile application, users are guided within the given' +
                     ' route to the destination. '
                 },
-                url: '/freeToGo'
+                url: '/#freeToGo'
             },
             {
                 left: "../images/main/UniqueWeb.png",
@@ -95,7 +95,7 @@ var app = angular
                     ' studios in HUST. The website allows people who are interested in the Studio to get to know' +
                     ' more about its history, people, achievements, and updates.'
                 },
-                url: '/uniqueStudio'
+                url: '/#uniqueStudio'
             },
             {
                 left: "../images/main/OverHUSTpng.png",
@@ -105,7 +105,7 @@ var app = angular
                     'navigate routines on campus.With highly detailed panoramic street-level photos, users are' +
                     ' better able to find the destinations,or just take a visual tour on campus within the app. '
                 },
-                url: '/overHUST'
+                url: '/#overHUST'
             }
         ];
         $scope.unique = [
