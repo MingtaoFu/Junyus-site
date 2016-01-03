@@ -12,7 +12,7 @@ var app = angular
     .animation('.viewContainer', function($location) {
         return {
             enter: function() {
-                if(!$location.url().match(/^\/$ || ^\/#/))
+                if(!(/^\/$|^\/#.*/).test($location.url()))
                     window.scrollTo(0,0);
             }
         }
