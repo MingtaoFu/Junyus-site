@@ -12,8 +12,6 @@ var app = angular
     .animation('.viewContainer', function($location) {
         return {
             enter: function() {
-                console.log($location.url());
-                console.log($location.hash());
                 if(!(/^\/$|^\/#.*/).test($location.url()))
                     window.scrollTo(0,0);
             }
@@ -51,6 +49,19 @@ var app = angular
         //$locationProvider.html5Mode(true);
     })
     .controller('worksLayout', function($scope, $rootScope) {
+        $scope.$on('$viewContentLoaded', function(event){
+            var loader = $('#loader');
+            loader.animate({'opacity':0}, function() {
+                loader.css({'display':'none'});
+            });
+        });
+
+        $scope.$on('$viewContentLoading', function(event, viewConfig){
+            var loader = $('#loader');
+            loader.css({'display':'block'});
+            loader.animate({'opacity':1});
+        });
+
         $rootScope.down=false;
         $rootScope.isTran=false;
         if (angular.element(window).scrollTop() != 0) {
@@ -68,7 +79,7 @@ var app = angular
                 url: '/#hummer'
             },
             {
-                left: "../images/main/OneArm.png",
+                left: "../images/main/OneArm.jpg",
                 right: {
                     title: 'OneArm',
                     content: 'OneArm is a wearable armband  that allows people control computer' +
@@ -90,7 +101,7 @@ var app = angular
                 url: '/#freeToGo'
             },
             {
-                left: "../images/main/UniqueWeb.png",
+                left: "../images/main/UniqueWeb.jpg",
                 right: {
                     title: 'Unique Studio',
                     content: 'The website demonstrates an overview of Unique Studio, a pioneering student-run' +
@@ -100,7 +111,7 @@ var app = angular
                 url: '/#uniqueStudio'
             },
             {
-                left: "../images/main/OverHUSTpng.png",
+                left: "../images/main/OverHUSTpng.jpg",
                 right: {
                     title: 'OverHUST',
                     content: 'OverHust is a mobile application that utilizes street view maps to help users ' +
@@ -112,7 +123,7 @@ var app = angular
         ];
         $scope.unique = [
             {
-                img: "../images/main/UniqueStudioPic.png",
+                img: "../images/main/UniqueStudioPic.jpg",
                 intro: {
                     title: "Unique Studio",
                     content: "In 2014 – 2015, I served as the Director of Unique Studio, a studio at HUST" +
@@ -124,7 +135,7 @@ var app = angular
                 url: 'http://www.hustunique.com'
             },
             {
-                img: "../images/main/Design.png",
+                img: "../images/main/Design.jpg",
                 intro: {
                     title: "Design Team",
                     content: "In 2013 – 2014, I served as the Director of Design Team in Unique Studio. During my term," +
@@ -135,7 +146,7 @@ var app = angular
                 url:"javascript:openDesignBox()"
             },
             {
-                img: "../images/main/HackDay.png",
+                img: "../images/main/HackDay.jpg",
                 intro: {
                     title: "Unique Hack Day",
                     content: "I directed one of the largest college hackathon in China, Unique Hack Day, aiming to " +
