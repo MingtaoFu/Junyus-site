@@ -43,17 +43,39 @@
     margin-bottom: 20px;
   }
   .prev{
+
     float: left;
-    img{
-      position: relative;
-      top: 9px;
+    .pointL{
+      background: url("../images/main/pointL.svg") no-repeat;
+      display: inline-block;
+      height: 9px;
+      width: 5px;
+      margin-bottom: 0;
+      background-size: 100% 100%;
+    }
+    &:hover{
+      .pointL{
+        background: url("../images/main/pointLW.svg") no-repeat;
+        background-size: 100% 100%;
+      }
     }
   }
   .next{
+
     float: right;
-    img{
-      position: relative;
-      top: 9px;
+    .pointR{
+      background: url("../images/main/point.svg") no-repeat;
+      display: inline-block;
+      height: 9px;
+      width: 5px;
+      margin-bottom: 0;
+      background-size: 100% 100%;
+    }
+    &:hover{
+      .pointR{
+        background: url("../images/main/pointW.svg") no-repeat;
+        background-size: 100% 100%;
+      }
     }
   }
   .backToTop{

@@ -82,10 +82,9 @@ var app = angular
                 left: "../images/main/OneArm.jpg",
                 right: {
                     title: 'OneArm',
-                    content: 'OneArm is a wearable armband  that allows people control computer' +
-                    ' using gesture control. With the software client, users are able to take control' +
-                    ' of applications on computer or other devices wit h five basic gestures ' +
-                    'and their specific combinations'
+                    content: 'OneArm is a wearable armband that allows people to control computer with gestures. ' +
+                    'With the software client, users are able to take control of applications on computer or other ' +
+                    'devices with five basic gestures and their specific combinations.'
                 },
                 url: '/#oneArm'
             },
@@ -93,10 +92,10 @@ var app = angular
                 left: "../images/main/HeadringApp.png",
                 right: {
                     title: 'Visualizing Headring',
-                    content: 'Visualizing Headring is a wearable auxiliary product that aids the blind to ' +
-                    'avoid obstacles and navigate to a given destination. With vibration from the headring' +
-                    ' and voice navigation from the mobile application, users are guided within the given' +
-                    ' route to the destination. '
+                    content: 'Visualizing Headring is a wearable auxiliary product that aids the blind to avoid' +
+                    ' obstacles and navigate them to destinations. With vibration from the headring and voice' +
+                    ' navigation from the mobile application, users are guided within the given route on their' +
+                    ' way to the destinations.'
                 },
                 url: '/#freeToGo'
             },
@@ -104,9 +103,9 @@ var app = angular
                 left: "../images/main/UniqueWeb.jpg",
                 right: {
                     title: 'Unique Studio',
-                    content: 'The website demonstrates an overview of Unique Studio, a pioneering student-run' +
-                    ' studios in HUST. The website allows people who are interested in the Studio to get to know' +
-                    ' more about its history, people, achievements, and updates.'
+                    content: 'The website presents an overview of Unique Studio, a student-run studios in HUST that' +
+                    ' focuses on Internet technologies. The website allows people to get to know more about the ' +
+                    'studio’s history, people, achievements, and updates.'
                 },
                 url: '/#uniqueStudio'
             },
@@ -114,9 +113,9 @@ var app = angular
                 left: "../images/main/OverHUSTpng.jpg",
                 right: {
                     title: 'OverHUST',
-                    content: 'OverHust is a mobile application that utilizes street view maps to help users ' +
-                    'navigate routines on campus.With highly detailed panoramic street-level photos, users are' +
-                    ' better able to find the destinations,or just take a visual tour on campus within the app. '
+                    content: 'OverHUST is a mobile application that utilizes street view maps to help users navigate' +
+                    ' on campus. With highly detailed panoramic street-level photos, users are better able to explore' +
+                    ' the campus within the app.'
                 },
                 url: '/#overHUST'
             }
@@ -126,11 +125,11 @@ var app = angular
                 img: "../images/main/UniqueStudioPic.jpg",
                 intro: {
                     title: "Unique Studio",
-                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a studio at HUST" +
-                    " that focuses on Internet technologies. The Unique Studio consists of 8 different groups of over 100 " +
-                    "undergraduates. During my term, we had won several awards in national and international competitions." +
-                    " We also launched 10+ Internet products, two of which had successfully turned into startups and" +
-                    " raised 1 million RMB funds separately."
+                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a student-run studio at HUST" +
+                    " that focuses on Internet technologies. The Unique Studio consists of 8 different groups of over" +
+                    " 100 undergraduates. During my term, we had won several awards in national and international" +
+                    " competitions. We also launched 10+ Internet products, two of which had successfully turned into" +
+                    " startups and raised 1 million RMB funds separately."
                 },
                 url: 'http://www.hustunique.com'
             },
@@ -138,10 +137,10 @@ var app = angular
                 img: "../images/main/Design.jpg",
                 intro: {
                     title: "Design Team",
-                    content: "In 2013 – 2014, I served as the Director of Design Team in Unique Studio. During my term," +
-                    " I led a team of 12 student designers to be responsible for the design of 10+ products. I organized" +
+                    content: "In 2013 – 2014, I served as the team lead of 12 student designers in Unique Studio. " +
+                    "During my term, I led the team to be responsible for the design of 10+ products. I organized" +
                     " regular meetups, workshops and salons in which people shared ideas concerning different topics" +
-                    " on design and brainstormed creative solutions to the topic-related issues. "
+                    " on design and brainstormed creative solutions to the topic-related issues."
                 },
                 url:"javascript:openDesignBox()"
             },
@@ -149,10 +148,11 @@ var app = angular
                 img: "../images/main/HackDay.jpg",
                 intro: {
                     title: "Unique Hack Day",
-                    content: "I directed one of the largest college hackathon in China, Unique Hack Day, aiming to " +
-                    "bring such an event that inspires people with a newfound desire to change the society to China’s" +
-                    " college students. We successfully recruited 20 sponsor companies to support our event and" +
-                    " invited 150 students out of over 700 applicants from China, U.S., Russia and India to participate."
+                    content: "I directed one of the largest college hackathons in China, Unique Hack Day, aiming" +
+                    " to bring such an event that inspires people with a newfound desire to change the society to " +
+                    "China’s college students. We successfully recruited 20 sponsor companies to support our event" +
+                    " and invited 150 students out of over 700 applicants from China, U.S., Japan, Russia and India" +
+                    " to participate."
                 },
                 url: 'http://hacks.hustunique.com/'
             }
