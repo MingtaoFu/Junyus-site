@@ -72,9 +72,9 @@ var app = angular
                 left: "../images/main/Hummer.png",
                 right: {
                     title: 'Hummer',
-                    content: 'Hummer is a game application that aims to help people' +
-                    'sing better.In the game, players sing through the microphone to control' +
-                    'a hummingbird and navigate through adventurous terrains.'
+                    content: 'Hummer is a game application that aims to help people ' +
+                    'sing better. In the game, players sing through the microphone to control ' +
+                    'a humming bird and navigate through adventurous terrains.'
                 },
                 url: '/#hummer'
             },
@@ -91,9 +91,9 @@ var app = angular
             {
                 left: "../images/main/HeadringApp.png",
                 right: {
-                    title: 'Visualizing Headring',
-                    content: 'Visualizing Headring is a wearable auxiliary product that aids the blind to avoid' +
-                    ' obstacles and navigate them to destinations. With vibration from the headring and voice' +
+                    title: 'Visualizing Headband',
+                    content: 'Visualizing headband is a wearable auxiliary product that aids the blind to avoid' +
+                    ' obstacles and navigate them to destinations. With vibration from the headband and voice' +
                     ' navigation from the mobile application, users are guided within the given route on their' +
                     ' way to the destinations.'
                 },
@@ -125,7 +125,7 @@ var app = angular
                 img: "../images/main/UniqueStudioPic.jpg",
                 intro: {
                     title: "Unique Studio",
-                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a student-run studio at HUST" +
+                    content: "In 2014 – 2015, I served as the Director of Unique Studio, a studio at HUST" +
                     " that focuses on Internet technologies. The Unique Studio consists of 8 different groups of over" +
                     " 100 undergraduates. During my term, we had won several awards in national and international" +
                     " competitions. We also launched 10+ Internet products, two of which had successfully turned into" +
